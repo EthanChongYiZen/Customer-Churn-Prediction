@@ -25,7 +25,7 @@ A complete end-to-end machine learning project that predicts whether a customer 
 
 ---
 
-## 🏢 Business Problem
+## Business Problem
 
 Customer churn — when a customer stops doing business with a company — is one of the most costly problems in subscription-based industries (telecom, SaaS, banking, streaming). Acquiring a new customer typically costs **5–25× more** than retaining an existing one.
 
