@@ -1,4 +1,4 @@
-# 📊 Customer Churn Prediction Using Machine Learning
+# Customer Churn Prediction Using Machine Learning
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.6-orange?logo=scikit-learn&logoColor=white)
@@ -10,7 +10,7 @@ A complete end-to-end machine learning project that predicts whether a customer 
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Business Problem](#-business-problem)
 - [Dataset](#-dataset)
@@ -33,7 +33,7 @@ Customer churn — when a customer stops doing business with a company — is on
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 | Property | Value |
 |----------|-------|
@@ -63,7 +63,7 @@ Customer churn — when a customer stops doing business with a company — is on
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 customer-churn-prediction/
@@ -77,7 +77,7 @@ customer-churn-prediction/
 
 ---
 
-## 🔬 Workflow Overview
+## Workflow Overview
 
 ```
 1. Business Problem Definition
@@ -128,7 +128,7 @@ customer-churn-prediction/
 
 ---
 
-## 📈 Models & Results
+## Models & Results
 
 All models were tuned using **GridSearchCV with 5-fold cross-validation**.
 
@@ -138,15 +138,15 @@ All models were tuned using **GridSearchCV with 5-fold cross-validation**.
 | 2 | K-Nearest Neighbors | `n_neighbors=9`, `weights=uniform` | 86.0% |
 | 3 | Support Vector Machine | `C=0.01`, `kernel=linear` | 87.5% |
 | 4 | Decision Tree | `criterion=entropy`, `max_depth=10`, `min_samples_split=10` | 84.5% |
-| 5 | **Random Forest** ⭐ | `n_estimators=256`, `max_features=2`, `bootstrap=True` | **88.0%** |
+| 5 | **Random Forest** | `n_estimators=256`, `max_features=2`, `bootstrap=True` | **88.0%** |
 
-### 🏆 Best Model: Random Forest Classifier — 88.0% Accuracy
+### Best Model: Random Forest Classifier — 88.0% Accuracy
 
 Random Forest outperformed all other models by combining the predictions of 256 decision trees. It was saved to `model.pkl` for future use.
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 | Finding | Detail |
 |---------|--------|
@@ -157,7 +157,7 @@ Random Forest outperformed all other models by combining the predictions of 256 
 
 ---
 
-## 💡 Business Recommendations
+## Business Recommendations
 
 **1. Prioritise Early Retention (First 6–18 Months)**
 Customers who churn tend to leave early in their lifecycle. Invest in onboarding experiences, welcome offers, and proactive check-in calls during the first year to build loyalty.
@@ -176,7 +176,7 @@ With 88% of customers labelled as churned, the dataset is highly imbalanced. Fut
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -212,7 +212,7 @@ scaler = joblib.load('scaler.pkl')
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 pandas
@@ -231,7 +231,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn joblib jupyter
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 - [ ] Apply SMOTE or `class_weight='balanced'` to handle the 88:12 class imbalance
 - [ ] Add more features: ContractType, InternetService, TechSupport, TotalCharges
@@ -242,10 +242,8 @@ pip install pandas numpy matplotlib seaborn scikit-learn joblib jupyter
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
----
 
-*Built with ❤️ using Python, Scikit-learn, and Matplotlib.*
